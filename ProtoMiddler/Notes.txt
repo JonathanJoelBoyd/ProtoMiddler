@@ -1,0 +1,30 @@
+﻿            // MessageBox.Show(oS.RequestMethod);
+            //
+            // do it here....
+            //
+
+            string contentType = oSession.oResponse["Content-Type"];
+
+            if (contentType.ToLower().Contains("protobuf"))
+            {
+                // oSession.oResponse.pipeServer
+                byte[] protobufBytes = oSession.responseBodyBytes;
+
+
+     
+
+
+                //MessageBox.Show(parsedProtobuf);
+
+                _myControl.Text = "Account\n" + parsedProtobuf;
+                // proc.StandardInput.Write(
+                //proc.WaitForExit(5000);
+
+                // MessageBox.Show(FiddlerApplication.UI.lvSessions.Items[0].Name);
+
+                //oSession.oResponse.
+            }
+            else
+            {
+                _myControl.Text = "oSession.requestBodyBytes would be here.  just sayin'";  // oSession.requestBodyBytes
+            }

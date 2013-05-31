@@ -1,0 +1,4 @@
+# This ignores things from Visual Studio
+ProtoMiddler/bin/
+ProtoMiddler/obj/
+ProtoMiddler/Properties/
